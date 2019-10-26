@@ -66,6 +66,7 @@ h1 {
 .quote-box {
   text-shadow: 1px 1px 1px rgba(50, 50, 50, 0.3);
   line-height: 0.5;
+  max-width: 1020px;
 }
 
 .quote {
@@ -121,6 +122,10 @@ h1 {
 .year:before {
   content: ", ";
   font-style: normal;
+}
+
+.emoji {
+  font-size: 2.5em;
 }
 
 @media (min-width: 768px) {
