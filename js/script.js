@@ -116,7 +116,7 @@ document.getElementById('quote-box').innerHTML = emptyString;
  Change Background Color On Button Click
 ***/
 
-const randomColor = ['sienna', 'black', 'goldenrod', 'tomato', 'slategray', 'chocolate', 'limegreen', 'orchid', 'darkkhaki', 'indianred', 'darkred', 'deeppink', 'darkslateblue', 'darkcyan', 'midnightblue', 'darkslateblue'];
+const randomColor = ['sienna', 'black', 'goldenrod', 'tomato', 'slategray', 'chocolate', 'green', 'orchid', 'darkkhaki', 'indianred', 'darkred', 'deeppink', 'darkslateblue', 'darkcyan', 'midnightblue', 'darkslateblue'];
 const randomNumber = Math.floor( Math.random() * randomColor.length);
 
 document.querySelector('body').style.backgroundColor = randomColor[randomNumber];
