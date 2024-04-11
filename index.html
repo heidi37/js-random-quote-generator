@@ -1,14 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Random Quote and Color Generator" />
+    <meta
+      property="og:description"
+      content="Colorful random quote generator built with vanilla javaScript"
+    />
+    <meta
+      property="og:image"
+      content="https://heidifryzell.com/js-random-quote-generator/screenshot.png"
+    />
+    <meta
+      property="og:url"
+      content="https://heidifryzell.com/js-random-quote-generator/"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Heidi Fryzell" />
+    <link rel='stylesheet' id='google-fonts-css' href='https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&#038;display=swap' type='text/css' media='all' />
+    <link rel='stylesheet' id='font-awesome-css' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css?ver=6.5.1' type='text/css' media='all' />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-SF8R56H54Q"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-SF8R56H54Q");
+    </script>
     <title>Random Quotes</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
   </head>
 
   <body>
+    <div class="app-container">
     <header>
       <h1>Random Quotes</h1>
       <button id="load-quote" class="load-quote">Show another quote</button>
@@ -16,11 +49,23 @@
 
     <div class="container">
       <div id="quote-box" class="quote-box">
-        <p class="quote">Every great developer you know got there by solving problems they were unqualified to solve until they actually did it.</p>
-        <p class="source">Patrick McKenzie<span class="citation">Twitter</span><span class="year">2016</span><span class="emoji">🦉</span></p>
+        <p class="quote">
+          Every great developer you know got there by solving problems they were
+          unqualified to solve until they actually did it.
+        </p>
+        <p class="source">
+          Patrick McKenzie<span class="citation">Twitter</span
+          ><span class="year">2016</span><span class="emoji">🦉</span>
+        </p>
       </div>
     </div>
-    
+  </div>
+    <footer>
+      <p>
+        <a href="https://heidifryzell.com"><i class="fa-solid fa-terminal"></i></a>
+        <a href="https://heidifryzell.com">heidifryzell.com</a> &copy;<span id="copyrightYear"></span>
+      </p>
+    </footer>
     <script src="js/script.js"></script>
   </body>
 </html>

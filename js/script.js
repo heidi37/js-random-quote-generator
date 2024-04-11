@@ -3,8 +3,9 @@ Treehouse FSJS Techdegree:
 project 1 - A Random Quote Generator
 ******************************************/
 
+document.getElementById("copyrightYear").innerText = new Date().getFullYear();
 
-/*** 
+/***
  Quotes taken from https://goodreads.com
 ***/
 
